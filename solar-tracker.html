@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Solar Tracker | Yantrigen Labs</title>
+    <style>
+        /* Basic Dark Theme Setup */
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #cbd5e1; line-height: 1.6; }
+        header { padding: 20px 50px; background-color: #1e293b; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: #38bdf8; text-decoration: none; letter-spacing: 1px; }
+        .back-btn { color: #f8fafc; text-decoration: none; font-size: 0.9em; padding: 8px 15px; background: #334155; border-radius: 5px; }
+        
+        /* Project Content */
+        .project-container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+        h1 { color: #f8fafc; font-size: 2.5rem; margin-bottom: 10px; }
+        .tags { margin-bottom: 30px; }
+        .tag { background: rgba(56, 189, 248, 0.1); color: #38bdf8; padding: 5px 12px; border-radius: 20px; font-size: 0.85em; margin-right: 10px; border: 1px solid rgba(56, 189, 248, 0.3); }
+        
+        .content-section { background: #1e293b; padding: 30px; border-radius: 10px; margin-bottom: 30px; border-left: 4px solid #38bdf8; }
+        h2 { color: #f8fafc; margin-top: 0; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        
+        /* Placeholder for 3D Model or Image */
+        .media-placeholder { width: 100%; height: 400px; background: #0f172a; border: 2px dashed #334155; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #64748b; margin-bottom: 30px; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">YANTRIGEN LABS</a>
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </header>
+
+    <div class="project-container">
+        <h1>Smart Solar Tracker</h1>
+        <div class="tags">
+            <span class="tag">Mechanical Engineering</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Energy Efficiency</span>
+        </div>
+
+        <!-- Yahan aap apne 3D model ki video ya photo daal sakte hain -->
+        <div class="media-placeholder">
+            [ 3D CAD Model / Project Video Placeholder ]
+        </div>
+
+        <div class="content-section">
+            <h2>Project Overview</h2>
+            <p>The Smart Solar Tracker is a mechanical and electronic integration project designed to automatically orient solar panels towards the sun. By constantly adjusting the panel's angle throughout the day, this system maximizes energy absorption compared to static solar panels.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>How It Works (Kinematics & Control)</h2>
+            <p>Using Light Dependent Resistors (LDRs) positioned on the panel, the system detects the intensity of sunlight. An Arduino microcontroller processes this data and commands servo motors to rotate the mechanical axis, ensuring the panel is always perpendicular to the sun's rays.</p>
+            <ul>
+                <li><strong>Sensors:</strong> 4 LDRs for multi-directional light sensing.</li>
+                <li><strong>Microcontroller:</strong> Arduino UNO for logic processing.</li>
+                <li><strong>Actuators:</strong> High-torque servo motors for precise angular movement.</li>
+                <li><strong>Structure:</strong> Custom-designed mechanical frame for stability.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
