@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Balancing Robot | Yantrigen Labs</title>
+    <style>
+        /* Basic Dark Theme Setup */
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #cbd5e1; line-height: 1.6; }
+        header { padding: 20px 50px; background-color: #1e293b; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: #38bdf8; text-decoration: none; letter-spacing: 1px; }
+        .back-btn { color: #f8fafc; text-decoration: none; font-size: 0.9em; padding: 8px 15px; background: #334155; border-radius: 5px; }
+        
+        /* Project Content */
+        .project-container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+        h1 { color: #f8fafc; font-size: 2.5rem; margin-bottom: 10px; }
+        .tags { margin-bottom: 30px; }
+        .tag { background: rgba(56, 189, 248, 0.1); color: #38bdf8; padding: 5px 12px; border-radius: 20px; font-size: 0.85em; margin-right: 10px; border: 1px solid rgba(56, 189, 248, 0.3); }
+        
+        .content-section { background: #1e293b; padding: 30px; border-radius: 10px; margin-bottom: 30px; border-left: 4px solid #38bdf8; }
+        h2 { color: #f8fafc; margin-top: 0; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">YANTRIGEN LABS</a>
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </header>
+
+    <div class="project-container">
+        <h1>Self-Balancing Robot</h1>
+        <div class="tags">
+            <span class="tag">Robotics</span>
+            <span class="tag">PID Controller</span>
+            <span class="tag">MPU6050</span>
+            <span class="tag">Control Systems</span>
+        </div>
+
+        <!-- Project Image -->
+        <div style="width: 100%; border-radius: 10px; overflow: hidden; border: 1px solid #334155; margin-bottom: 30px;">
+            <!-- Dhyan dein: Yahan robot-photo.jpg likha hai. Aapko isi naam se photo upload karni hogi -->
+            <img src="robot-photo.jpg" alt="Self-Balancing Robot by Shubham Gaikwad" style="width: 100%; display: block; background: #0f172a; min-height: 200px; text-align: center; color: #64748b;">
+        </div>
+
+        <div class="content-section">
+            <h2>Project Overview</h2>
+            <p>The Self-Balancing Robot is an advanced robotics project utilizing sensors and control algorithms to maintain equilibrium and stability on two wheels. Similar to an inverted pendulum, it constantly reads its orientation and drives the motors to prevent itself from falling over.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>How It Works (Kinematics & Control)</h2>
+            <p>The core of this robot lies in its feedback loop. By mathematically calculating the tilt error, the system applies the exact amount of force needed in the opposite direction.</p>
+            <ul>
+                <li><strong>IMU Sensor (MPU6050):</strong> Combines a 3-axis accelerometer and a 3-axis gyroscope to precisely measure the robot's tilt angle in real-time.</li>
+                <li><strong>PID Algorithm:</strong> A custom-tuned Proportional-Integral-Derivative controller processes the sensor data to calculate the required motor speed.</li>
+                <li><strong>Microcontroller:</strong> An Arduino board runs the high-speed calculations and sends PWM signals to the motor drivers.</li>
+                <li><strong>Actuators:</strong> DC Gear Motors (or Steppers) provide the fast response time needed to keep the chassis upright.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
