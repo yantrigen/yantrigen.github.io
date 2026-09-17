@@ -808,6 +808,67 @@
   /* Status classes for new cards */
   .s-completed { background:rgba(0,200,100,0.1); color:#00c864; border:1px solid rgba(0,200,100,0.28); }
   .s-paused    { background:rgba(255,170,0,0.1);  color:#ffaa00; border:1px solid rgba(255,170,0,0.28); }
+    /* =========================================================
+   📱 MOBILE RESPONSIVENESS (Media Queries)
+   ========================================================= */
+@media screen and (max-width: 768px) {
+    /* 1. General Padding */
+    body {
+        padding: 0 10px; /* Gives a little breathing room on the sides */
+    }
+    
+    section {
+        padding: 40px 10px !important; /* Reduces huge padding on mobile */
+    }
+
+    /* 2. Video Gallery Fix */
+    .gallery-grid {
+        grid-template-columns: 1fr !important; /* Forces 1 column on mobile */
+        gap: 20px;
+    }
+
+    .gallery-card {
+        margin-bottom: 15px; /* Adds space between cards */
+    }
+
+    /* 3. Member Cards Grid Fix */
+    #club-members > div {
+        grid-template-columns: 1fr !important; /* Forces 1 column on mobile */
+        gap: 15px;
+    }
+
+    /* 4. Text & Header Adjustments */
+    h1, h2, h3 {
+        font-size: 1.8em !important; /* Makes big headers fit the screen */
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 0.95em !important;
+        line-height: 1.5;
+    }
+
+    /* 5. Join Banner Fix */
+    .join-banner {
+        padding: 25px 15px !important;
+    }
+    
+    .join-banner h3 {
+        font-size: 1.5em !important;
+    }
+
+    /* 6. Navigation Menu (Optional - if it's breaking) */
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
   </style>
 </head>
 <body>
