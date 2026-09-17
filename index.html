@@ -1409,22 +1409,82 @@
     <h3 style="color: #38bdf8; font-size: 2em; margin-bottom: 10px;">Our Core Team & Members</h3>
     <p style="color: #94a3b8; font-size: 1em; margin-bottom: 30px;">The brilliant minds building the future of robotics at Yantrigen Labs.</p>
     
-    <!-- Members Grid -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 800px; margin: 0 auto;">
-        
-        <!-- New Member add -->
-        <div style="background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1;">
-            🚀 Yash Holkar
-        </div>
-        <div style="background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1;">
-            ⚙️ Roshan Roomet
-        </div>
-        <div style="background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1;">
-    🚀 Sanket Joshi
+ <!-- Members Grid (Isse purane grid ko replace karein) -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 800px; margin: 0 auto;">
+    
+    <!-- Yash Holkar -->
+    <div onclick="openMember('profile-yash')" style="cursor: pointer; background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1; transition: 0.3s;" onmouseover="this.style.borderColor='#38bdf8'" onmouseout="this.style.borderColor='#475569'">
+        🚀 Yash Holkar
+    </div>
+    
+    <!-- Roshan Kinge -->
+    <div onclick="openMember('profile-roshan')" style="cursor: pointer; background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1; transition: 0.3s;" onmouseover="this.style.borderColor='#38bdf8'" onmouseout="this.style.borderColor='#475569'">
+        ⚙️ Roshan Kinge
+    </div>
+
+    <!-- Sanket Joshi -->
+    <div onclick="openMember('profile-sanket')" style="cursor: pointer; background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1; transition: 0.3s;" onmouseover="this.style.borderColor='#38bdf8'" onmouseout="this.style.borderColor='#475569'">
+        🚀 Sanket Joshi
+    </div>
+
+    <!-- Vivek Kanojiya -->
+    <div onclick="openMember('profile-vivek')" style="cursor: pointer; background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1; transition: 0.3s;" onmouseover="this.style.borderColor='#38bdf8'" onmouseout="this.style.borderColor='#475569'">
+        🚀 Vivek Kanojiya
+    </div>
+    
 </div>
-      <div style="background: #1e293b; border: 1px solid #475569; border-radius: 8px; padding: 12px 25px; color: #cbd5e1;">
-    🚀 Vivek Kanojiya
+
+<!-- ================= PROFILES (Pop-ups) ================= -->
+
+<!-- Yash Profile -->
+<div id="profile-yash" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); z-index: 1000; justify-content: center; align-items: center; backdrop-filter: blur(5px);">
+    <div style="background: #1e293b; padding: 30px; border-radius: 15px; border: 2px solid #38bdf8; max-width: 400px; width: 90%; text-align: left; position: relative; box-shadow: 0 0 20px rgba(56,189,248,0.2);">
+        <span onclick="closeMember('profile-yash')" style="position: absolute; top: 15px; right: 20px; color: #f8fafc; cursor: pointer; font-size: 1.5em; font-weight: bold;">&times;</span>
+        <h3 style="color: #38bdf8; margin-top: 0; font-size: 1.5em;">Yash Holkar</h3>
+        <p style="color: #cbd5e1; font-weight: bold; margin-bottom: 5px;">Club Member</p>
+        <p style="color: #94a3b8; font-size: 0.95em;">Passionate about exploring robotics and contributing to innovative tech projects at Yantrigen Labs.</p>
+    </div>
 </div>
+
+<!-- Roshan Profile -->
+<div id="profile-roshan" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); z-index: 1000; justify-content: center; align-items: center; backdrop-filter: blur(5px);">
+    <div style="background: #1e293b; padding: 30px; border-radius: 15px; border: 2px solid #38bdf8; max-width: 400px; width: 90%; text-align: left; position: relative; box-shadow: 0 0 20px rgba(56,189,248,0.2);">
+        <span onclick="closeMember('profile-roshan')" style="position: absolute; top: 15px; right: 20px; color: #f8fafc; cursor: pointer; font-size: 1.5em; font-weight: bold;">&times;</span>
+        <h3 style="color: #38bdf8; margin-top: 0; font-size: 1.5em;">Roshan Kinge</h3>
+        <p style="color: #cbd5e1; font-weight: bold; margin-bottom: 5px;">Club Member</p>
+        <p style="color: #94a3b8; font-size: 0.95em;">Dedicated to learning advanced mechanical systems and collaborating on core engineering designs.</p>
+    </div>
+</div>
+
+<!-- Sanket Profile -->
+<div id="profile-sanket" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); z-index: 1000; justify-content: center; align-items: center; backdrop-filter: blur(5px);">
+    <div style="background: #1e293b; padding: 30px; border-radius: 15px; border: 2px solid #38bdf8; max-width: 400px; width: 90%; text-align: left; position: relative; box-shadow: 0 0 20px rgba(56,189,248,0.2);">
+        <span onclick="closeMember('profile-sanket')" style="position: absolute; top: 15px; right: 20px; color: #f8fafc; cursor: pointer; font-size: 1.5em; font-weight: bold;">&times;</span>
+        <h3 style="color: #38bdf8; margin-top: 0; font-size: 1.5em;">Sanket Joshi</h3>
+        <p style="color: #cbd5e1; font-weight: bold; margin-bottom: 5px;">Club Member</p>
+        <p style="color: #94a3b8; font-size: 0.95em;">Enthusiastic about software integration and building AI-driven solutions for real-world problems.</p>
+    </div>
+</div>
+
+<!-- Vivek Profile -->
+<div id="profile-vivek" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); z-index: 1000; justify-content: center; align-items: center; backdrop-filter: blur(5px);">
+    <div style="background: #1e293b; padding: 30px; border-radius: 15px; border: 2px solid #38bdf8; max-width: 400px; width: 90%; text-align: left; position: relative; box-shadow: 0 0 20px rgba(56,189,248,0.2);">
+        <span onclick="closeMember('profile-vivek')" style="position: absolute; top: 15px; right: 20px; color: #f8fafc; cursor: pointer; font-size: 1.5em; font-weight: bold;">&times;</span>
+        <h3 style="color: #38bdf8; margin-top: 0; font-size: 1.5em;">Vivek Kanojiya</h3>
+        <p style="color: #cbd5e1; font-weight: bold; margin-bottom: 5px;">Club Member</p>
+        <p style="color: #94a3b8; font-size: 0.95em;">Committed to hardware development and hands-on prototyping within the Yantrigen community.</p>
+    </div>
+</div>
+
+<!-- Script for opening/closing modals -->
+<script>
+    function openMember(id) {
+        document.getElementById(id).style.display = 'flex';
+    }
+    function closeMember(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+</script>
     </div>
 </section>
 
