@@ -46,8 +46,8 @@ Yantrigen Labs is driven by a highly motivated team of 7 innovators.
 | **[Vijay Mahendra Kanojiya]** | [Hardware and Electronic / Mechanical Engineer] |
 | **[Yash Rahul Holkar]** | [Mechanical Designer / CAD Expert] |
 | **[Sanket Sajan Bhise ]** | [Design Engineering] |
-| **[Roshan Avinash Kinge]** | [Software Developer] |
-| **[Vidhi Naresh Kaikadi]** | [Hardware Specialist] |
+| **[Roshan Avinash Kinge]** | [] |
+| **[Vidhi Naresh Kaikadi]** | [Design Engineering] |
 | **[Team Member 7 Name]** | [QA & Testing Lead] |
 
 > **Note to Recruiters & Evaluators:** Detailed individual competencies and backgrounds can be verified via our attached portfolios. Please review `Shubham_Portfolio.pdf` in the repository files for comprehensive academic and project details.
